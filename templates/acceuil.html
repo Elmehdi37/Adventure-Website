@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Acceuil</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links ">
+            <li> <a href="" class="active"> Home    </a> </li>
+            <li> <a href=""> Tours   </a> </li>
+            <li> <a href=""> Explore </a> </li>
+            <li> <a href=""> About   </a> </li>
+            <li class="ctn"> <a href=""> Contact </a> </li>
+        </ul>
+        <i class='bx bx-menu menu-btn'></i>
+    </nav>
+
+    <header>
+        <section class="head-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="" class="ctn">Learn More</a>
+        </section>
+    </header>
+
+    <!-- Events -->
+    <section class="container-events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="box-events">
+            <div class="events-col">
+                <img src="../static/img/camp trek.png" alt="camp trek">
+                <h4>Everest Camp Trek</h4>
+                <p>Il existe deux camps de base de l'Everest, le premier versant sud se trouve à 5 364 mètres d'altitude, au pied du glacier du Khumbu, le second versant nord se situe à 5 154 mètres d'altitude, au pied du glacier du Rongbuk</p>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+
+            <div class="events-col">
+                <img src="../static/img/walking holidays.png" alt="camp trek">
+                <h4>Walking Holidays</h4>
+                <p>Our walking holidays are all designed to bring you closer to scenery, stunning landscapes, inspiring nature, and authentic local cultures worldwide.</p>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-explore">
+        <div class="explore">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p> 
+                Traveling is more than just visiting new places; it’s about experiencing different cultures, meeting new people, and broadening your perspective on life. The world is filled with breathtaking landscapes, vibrant cities, and hidden gems waiting to be discovered.
+                From the towering peaks of the Himalayas to the serene beaches of the Maldives, every destination has its own unique charm. Exploring new places allows you to step out of your comfort zone, try new cuisines, and embrace diverse traditions. Whether you're wandering through ancient ruins, hiking through lush forests, or simply getting lost in a bustling city, every journey leaves you with unforgettable memories.
+                So, pack your bags, set out on an adventure, and let the world surprise you with its wonders. The more you explore, the more you realize how much there is to see, learn, and experience.
+            </p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn'); // الزر
+        const navlinks = document.querySelector('.nav-links'); // القائمة
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu'); // إضافة/إزالة class للقائمة
+        });
+    </script>    
+</body>
+</html>
